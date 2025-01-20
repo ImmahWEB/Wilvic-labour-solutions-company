@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Wilvic Labour Solutions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">
+            <h1>Wilvic Labour Solutions</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#team">Meet Our Team</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#request">Request</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <h2>Connecting Talent with Opportunity</h2>
+        <p>Welcome to Wilvic Labour Solutions - Your recruitment partner</p>
+        <a href="#request" class="btn">Find a Job</a>
+        <a href="#request" class="btn">Post a Job</a>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about">
+        <h2>About Wilvic Labour Solutions</h2>
+        <p>At Wilvic Labour Solutions, we provide tailored, high-impact recruitment and labour hire services across Tanzania.</p>
+        <h3>Our Vision</h3>
+        <p>To be the leading provider of recruitment and labour solutions in Tanzania.</p>
+        <h3>Our Mission</h3>
+        <p>Delivering exceptional recruitment services that drive success for our clients and career growth for our candidates.</p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service-card">
+            <h3>24/7 Recruitment Service</h3>
+            <p>We offer round-the-clock support to meet urgent staffing needs.</p>
+        </div>
+        <div class="service-card">
+            <h3>Occupational Health & Safety</h3>
+            <p>Prioritizing safety and compliance in all recruitment processes.</p>
+        </div>
+        <div class="service-card">
+            <h3>Local Recruitment</h3>
+            <p>Focused on sourcing and placing candidates within Tanzania.</p>
+        </div>
+    </section>
+
+    <!-- Meet Our Team Section -->
+    <section id="team">
+        <h2>Meet Our Team</h2>
+        <div class="team-member">
+            <h3>Victor Gerald Moshi</h3>
+            <p>Operations Manager</p>
+        </div>
+        <div class="team-member">
+            <h3>Willy Obedi Mollel</h3>
+            <p>Marketing Manager</p>
+        </div>
+        <div class="team-member">
+            <h3>Fredrick Isaya Lucas</h3>
+            <p>HR Manager</p>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="#" method="POST">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Request Section -->
+    <section id="request">
+        <h2>Request a Job or Employee</h2>
+        <div class="request-form">
+            <h3>Job Seeker</h3>
+            <form id="job-seeker-form">
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="text" placeholder="Skills or Expertise" required>
+                <button type="submit" class="btn">Submit Job Request</button>
+            </form>
+
+            <h3>Employer</h3>
+            <form id="employer-form">
+                <input type="text" placeholder="Company Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="text" placeholder="Job Position" required>
+                <button type="submit" class="btn">Submit Employee Request</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

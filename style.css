@@ -1,0 +1,306 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: black;
+    color: yellow;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav .logo h1 {
+    color: yellow;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: yellow;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: black;
+    background-color: yellow;
+    padding: 5px;
+}
+
+/* Hero Section */
+.hero {
+    background-color: yellow;
+    color: black;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.hero .btn {
+    background-color: black;
+    color: yellow;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 10px;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.hero .btn:hover {
+    background-color: yellow;
+    color: black;
+}
+
+/* About Section */
+#about {
+    background-color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+#about h3 {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+/* Services Section */
+#services {
+    background-color: #333;
+    color: yellow;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#services h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.service-card {
+    background-color: black;
+    color: yellow;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    width: 30%;
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    background-color: yellow;
+    color: black;
+    transform: scale(1.05);
+}
+
+.service-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Team Section */
+#team {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+#team h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.team-member {
+    display: inline-block;
+    width: 30%;
+    margin: 10px;
+    background-color: black;
+    color: yellow;
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.team-member:hover {
+    background-color: yellow;
+    color: black;
+    transform: scale(1.05);
+}
+
+/* Contact Section */
+#contact {
+    background-color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+form {
+    width: 60%;
+    margin: 0 auto;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: black;
+    color: yellow;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background-color: yellow;
+    color: black;
+}
+
+/* Request Section */
+#request {
+    background-color: #333;
+    color: yellow;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.request-form {
+    display: flex;
+    justify-content: space-around;
+}
+
+.request-form h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.request-form form {
+    width: 45%;
+    background-color: black;
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.request-form form:hover {
+    background-color: yellow;
+    color: black;
+}
+
+.request-form form input, .request-form form button {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.request-form form button {
+    background-color: black;
+    color: yellow;
+}
+
+.request-form form button:hover {
+    background-color: yellow;
+    color: black;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    .hero .btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    #services .service-card,
+    #team .team-member {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    form {
+        width: 80%;
+    }
+
+    .request-form {
+        flex-direction: column;
+    }
+
+    .request-form form {
+        width: 80%;
+        margin: 0 auto 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h2 {
+        font-size: 24px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+}
